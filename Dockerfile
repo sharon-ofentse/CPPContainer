@@ -1,4 +1,4 @@
-FROM openjdk:1
+FROM openjdk:8
 EXPOSE 8555
-ADD target/a_maven_project.jar a_maven_project.jar
+ADD sample/a_maven_project.jar a_maven_project.jar
 ENTRYPOINT ["java","-jar","/mavenBuild.jar"]
